@@ -20,8 +20,7 @@ namespace WebApi.Controllers
         [HttpPost]
         [Route("json-post")]
         public ActionResult jsonPost([FromBody] JsonRegisterInfo reg_info){
-            var model = reg_info;
-            string res = JsonConvert.SerializeObject(model);
+            Response res = PostService.GetResponseData(reg_info);
             return Ok(res);
         }
 

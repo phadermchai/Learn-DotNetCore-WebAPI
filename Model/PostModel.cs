@@ -13,4 +13,12 @@ namespace WebApi.Model
         public string password { get; set; }
         public string email { get; set; }
     }
+
+    public class Response
+    {
+        public object data { get; set; }
+        public string message { get; set; }
+        public object resp_droplead { get; set; }
+    }
+
 }
